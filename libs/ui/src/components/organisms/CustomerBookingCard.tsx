@@ -15,6 +15,7 @@ export const CustomerBookingCard = ({ booking }: IBookingCardProps) => {
   const lat = booking.slot.garage.address?.lat || 0
   const lng = booking.slot.garage.address?.lng || 0
 
+  console.log("lat, long" , lat, lng);
   return (
     <div className="shadow-lg bg-white p-2">
       <div className="flex flex-col gap-2">

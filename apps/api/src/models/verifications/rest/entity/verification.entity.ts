@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import { Field } from '@nestjs/graphql'
 import { Verification } from '@prisma/client'
 import { IsDate, IsString, IsInt } from 'class-validator'

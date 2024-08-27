@@ -21,7 +21,8 @@
     "test:e2e": "jest --config ./test/jest-e2e.json",
     "entity:gql": "npx nestjs-prisma-codegen --graphql",
     "entity:rest": "npx nestjs-prisma-codegen --rest",
-    "entity:complete": "npx nestjs-prisma-codegen --complete"
+    "entity:complete": "npx nestjs-prisma-codegen --complete",
+    "migrate": "dotenv -e .env -- prisma migrate dev"
   },
   "prisma": {
     "seed": "ts-node prisma/seed/index.ts"
@@ -56,6 +57,7 @@
     "@types/supertest": "^2.0.11",
     "@typescript-eslint/eslint-plugin": "^5.0.0",
     "@typescript-eslint/parser": "^5.0.0",
+    "dotenv-cli": "^7.4.2",
     "eslint": "^8.0.1",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",

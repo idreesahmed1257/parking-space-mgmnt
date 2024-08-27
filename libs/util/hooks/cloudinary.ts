@@ -7,6 +7,7 @@ export const useCloudinaryUpload = () => {
     setUploading(true)
 
     try {
+      console.log('Uploading Image')
       const uploadPromises = Array.from(fileList).map(async (file) => {
         const formData = new FormData()
         formData.append('file', file)

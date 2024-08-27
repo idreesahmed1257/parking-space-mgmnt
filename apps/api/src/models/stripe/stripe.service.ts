@@ -19,6 +19,7 @@ export default class StripeService {
     uid,
     bookingData,
   }: CreateStripeDto) {
+    console.log('totalPriceObj', totalPriceObj)
     const session = await this.stripe.checkout.sessions.create({
       payment_method_types: ['card'],
       line_items: Object.entries(totalPriceObj)
