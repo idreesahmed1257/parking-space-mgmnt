@@ -35,16 +35,16 @@ export const StaticMapDirections = ({
 
   // Check if start and end coordinates are the same
   if (minLng === maxLng && minLat === maxLat) {
-    const offset = 0.0001; // Small offset to create a valid bounding box
-    minLng -= offset;
-    minLat -= offset;
-    maxLng += offset;
-    maxLat += offset;
+    const offset = 0.0001 // Small offset to create a valid bounding box
+    minLng -= offset
+    minLat -= offset
+    maxLng += offset
+    maxLat += offset
   }
 
   const boundingBox = [minLng, minLat, maxLng, maxLat].join(',')
 
-  const paddingString = padding.join(',');
+  const paddingString = padding.join(',')
 
   const url = `https://api.mapbox.com/styles/v1/iamkarthick/clk4em1h900i201pf3jvuei21/static/pin-s-a+000(${
     start.lng
